@@ -5,6 +5,15 @@
   </head>
   <body>
     <img src="Birdie.png">
-    Hello World
+    <h1 id="greeting">Hello World</h1>
   </body>
+  <script>
+    const greeting = document.getElementById('greeting')
+    const colors = ['red', 'blue', 'green', 'purple', 'orange'];
+
+    setInterval() => {
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      greeting.style.color = randomColor;
+    }, 5000};
+  </script>
 </html>
